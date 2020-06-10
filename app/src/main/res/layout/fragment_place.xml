@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragments.PlaceFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/placeImagesViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="3dp"
+                android:layout_margin="10dp"/>
+            
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/circleIndictor"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:focusable="true"
+                android:layout_centerHorizontal="true"
+                app:ci_drawable="@color/colorDark"
+                app:ci_drawable_unselected="@color/colorPrimaryDark"
+                android:layout_alignParentBottom="true"/>
+            
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/reviewText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_review_here"
+                    android:textSize="@dimen/_16sdp"
+                    android:layout_toStartOf="@+id/reviewbtn"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"/>
+
+                <ImageView
+                    android:id="@+id/reviewbtn"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/star"
+                    android:layout_marginEnd="10dp" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/history"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="5dp"
+                    android:background="@color/colorSecondaryDark"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/aboutText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/about"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:id="@+id/descriptionText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/aboutText"
+                            android:textColor="@color/colorDark"
+                            android:lineSpacingExtra="2dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:textSize="14sp"/>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/timing"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="5dp"
+                    android:background="@color/colorSecondaryDark"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/timingText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/timing"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:id="@+id/timedescriptiontext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="2dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_below="@+id/timingText"
+                            android:textColor="@color/colorDark"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:textSize="14sp"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/tickets"
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="5dp"
+                    android:background="@color/colorSecondaryDark"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/ticketsText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tickets"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:id="@+id/ticketdescriptiontext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="2dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_below="@+id/ticketsText"
+                            android:textColor="@color/colorDark"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:textSize="14sp"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/howtoreach"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="5dp"
+                    android:background="@color/colorSecondaryDark"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/howtoreachtext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/how_to_reach"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:id="@+id/howtorechdescriptiontext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="2dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_below="@+id/howtoreachtext"
+                            android:textColor="@color/colorDark"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:textSize="14sp"/>
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/nearbyplacesfromplace"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="5dp"
+                    android:background="@color/colorSecondaryDark"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/nearbyplacefromplacetext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/near_by_places"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:id="@+id/nearByPlacedescriptionText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="2dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_below="@+id/nearbyplacefromplacetext"
+                            android:textColor="@color/colorDark"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:textSize="14sp"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/nearbyhotelsfromplace"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="5dp"
+                    android:background="@color/colorSecondaryDark"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/nerabyhotelstext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/near_by_hotels"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:id="@+id/nearByhotelsdescriptionText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="2dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_below="@+id/nerabyhotelstext"
+                            android:textColor="@color/colorDark"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:textSize="14sp"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/colorSecondaryDark"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/Reviewtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="@string/review_title"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp" />
+
+                        <ListView
+                            android:id="@+id/listViewArtists"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:nestedScrollingEnabled="true"
+                            android:layout_below="@+id/Reviewtitle"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

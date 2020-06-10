@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "668611547113",
+    "firebase_url": "https://tourist-guide-72496.firebaseio.com",
+    "project_id": "tourist-guide-72496",
+    "storage_bucket": "tourist-guide-72496.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668611547113:android:7c509affe52b2e16cd8578",
+        "android_client_info": {
+          "package_name": "com.example.touristguide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668611547113-7kdngjr5r51eq69kgjufto6lt89f80t4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDnGH8OlHfb7IIYeU_qoSs-WDhVFFVc_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668611547113-7kdngjr5r51eq69kgjufto6lt89f80t4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668611547113:android:5a6249afe1e07e7ccd8578",
+        "android_client_info": {
+          "package_name": "com.project.touristguide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668611547113-8rc3qvh9jn29rup93kjngvr05td9gjju.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.touristguide",
+            "certificate_hash": "56d723be8aaa35733a1e7808c90d138ad7dc5099"
+          }
+        },
+        {
+          "client_id": "668611547113-7kdngjr5r51eq69kgjufto6lt89f80t4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDnGH8OlHfb7IIYeU_qoSs-WDhVFFVc_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668611547113-7kdngjr5r51eq69kgjufto6lt89f80t4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

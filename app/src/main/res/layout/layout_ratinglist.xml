@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="@color/colorDark"
+            android:text="@string/user_id"
+            android:fontFamily="@font/montserrat_bold"
+            android:id="@+id/textViewName"
+            android:textSize="16sp"
+            android:maxLength="20"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
+
+        <RatingBar
+            android:id="@+id/listrate"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:layout_marginTop="-5dp"
+            android:layout_marginEnd="-50dp"
+            android:theme="@style/RatingBar"
+            android:layout_alignParentEnd="true"
+            android:saveEnabled="true"
+            android:scaleX=".5"
+            android:scaleY=".5" />
+
+        <TextView
+            android:text="@string/comment"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:id="@+id/textViewGenre"
+            android:layout_width="match_parent"
+            android:textStyle="normal"
+            android:layout_below="@+id/textViewName"
+            android:textSize="14sp"
+            android:fontFamily="@font/montserrat"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
